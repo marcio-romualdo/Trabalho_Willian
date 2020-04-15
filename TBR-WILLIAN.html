@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html tbr="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>TRABALHOS</title>
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+   <style>
+      li {
+         list-style-type: none;
+      }
+   </style>
+</head>
+<script src="https://kit.fontawesome.com/019f3b30cb.js" crossorigin="anonymous"></script>
+
+<body style="background-color: rgb(184, 176, 212);">
+   <!--inicio do corpo-->
+
+   <div style="text-align: center;">
+      <!--inicio da div-->
+      <br>
+
+   </div>
+   <!--fim da div-->
+   <div id="conteudo" style="text-align: center;">
+      <!--inicio da div-->
+      <P>TENHA UMA RENDA EXTRA DA SUA CASA</P>
+
+      <p class="card text-white bg-secondary">
+         ADICIONE SEU E-MAIL PARA MAIS INFORMAÇÕES
+
+
+
+         <div class="card text-white bg-secondary" style="text-align: center;">
+            <!--inicio da div-->
+
+            <div class="card-body">
+               <!--inicio da div-->
+               <form class="card-body">
+                  <input type="email" id="citação" required>
+                  <button class="btn btn-primary" id="btn"> Adicionar</button>
+                  <hr>
+                  <h1> LISTA DE E-MAILS INTERSSADOS </h1>
+      </p>
+      <p>
+         <ul id="lista">
+      </p>
+
+      </ul>
+
+
+   </div>
+   <!--fim da div-->
+   <img
+      src="https://scontent.fcgb1-1.fna.fbcdn.net/v/t1.0-9/78050611_108817193926912_9196962811232649216_n.jpg?_nc_cat=103&_nc_sid=dd9801&_nc_ohc=57Cj-Y0fk7kAX9KETyJ&_nc_ht=scontent.fcgb1-1.fna&oh=15828b5917da739cd488b4d0a3f9cb36&oe=5EB8382D"
+      alt="">
+
+
+
+
+   <a> <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+   <a href="https://www.facebook.com/Trabalho-em-Casa-108806907261274/?modal=admin_todo_tour">
+
+      <p style="color:rgba(85, 0, 255, 0.795)" ;> Pagina no Facebook </p>
+      </div>
+      </div>
+      <!--fim da div-->
+      <!--fim da div-->
+      <script>
+         var btn = document.getElementById("btn");
+         btn.addEventListener("click", function () {
+            var citação = document.getElementById("citação");
+
+            var li = document.createElement("li");
+            li.innerText = citação.value;
+
+            var btnRemove = document.createElement("button");
+            btnRemove.innerText = "remover";
+            btnRemove.className = "btn btn-danger";
+
+            btnRemove.addEventListener("click", () => {
+               lista.removeChild(li);
+
+            });
+            li.appendChild(btnRemove);
+
+            var lista = document.getElementById("lista");
+            lista.appendChild(li);
+            citação.value = "";
+            citação.focus();
+
+
+         });
+      </script>
+</body>
+<!--fim do corpo-->
+
+</html>
